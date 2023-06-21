@@ -279,7 +279,6 @@ namespace Geisterspiel
                     }
 
                     Console.ResetColor();
-                    Console.ReadKey();
 
                 } while (schleife);
 
