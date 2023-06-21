@@ -98,7 +98,9 @@ namespace Geisterspiel
                 int score = 0;
 
                 Console.Clear();
-                    
+
+                do
+                {
                     schleife = true;
 
                     Console.ForegroundColor = ConsoleColor.Magenta;
@@ -143,6 +145,9 @@ namespace Geisterspiel
 
                             text = "Oh nein\n" +
                                 "der Geist hat dich entdeckt...\n";
+
+                            int alterscore = score;
+                            score = 0;
 
                             verzögerung = 50;
 
@@ -196,10 +201,10 @@ namespace Geisterspiel
                                         schleife = true;
 
                                         Console.Clear();
-                                        if (score > record)
+                                        if (alterscore > record)
                                         {
 
-                                            record = score;
+                                            record = alterscore;
                                             SaveRecordToFile(record);
 
                                         }
@@ -209,10 +214,10 @@ namespace Geisterspiel
                                     else if (i_eingabe == 2)
                                     {
 
-                                        if (score > record)
+                                        if (alterscore > record)
                                         {
 
-                                            record = score;
+                                            record = alterscore;
                                             SaveRecordToFile(record);
 
                                             Console.WriteLine("Gratuliere! Du hast einen neuen Rekord aufgestellt: " + record);
@@ -221,12 +226,12 @@ namespace Geisterspiel
                                         else
                                         {
 
-                                            Console.WriteLine("Deine erreichten Punkte: " + score + "\n" +
+                                            Console.WriteLine("Deine erreichten Punkte: " + alterscore + "\n" +
                                                               "Dein Rekord liegt bei:   " + record + "\n\n\n");
 
                                             Console.WriteLine("-------------------------------------------------------------------");
 
-                                                                                                                                 
+
                                         }
 
                                     }
@@ -269,12 +274,17 @@ namespace Geisterspiel
                         Console.WriteLine("" + eingabe + " ist eine falsche Eingabe\n" +
                                           "Versuche es mit einer Zahl zwischen 1 und 3 oder gib 'beenden' ein um das Spiel zu schließen.");
 
-                        Console.ReadKey();
+                        
 
                     }
 
                     Console.ResetColor();
-                                    
+                    Console.ReadKey();
+
+                } while (schleife);
+
+                schleife = true;
+
             } while (schleife);
 
         }
