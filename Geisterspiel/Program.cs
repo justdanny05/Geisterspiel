@@ -193,6 +193,7 @@ namespace Geisterspiel
 
                                 if (eingabe == "1" | eingabe == "2")
                                 {
+
                                     int.TryParse(eingabe, out i_eingabe);
 
                                     if (i_eingabe == 1)
@@ -201,6 +202,7 @@ namespace Geisterspiel
                                         schleife = true;
 
                                         Console.Clear();
+
                                         if (alterscore > record)
                                         {
 
@@ -221,6 +223,7 @@ namespace Geisterspiel
                                             SaveRecordToFile(record);
 
                                             Console.WriteLine("Gratuliere! Du hast einen neuen Rekord aufgestellt: " + record);
+
                                         }
 
                                         else
@@ -233,6 +236,45 @@ namespace Geisterspiel
 
 
                                         }
+
+                                        do
+                                        {
+
+                                            schleife = true;
+
+                                            Console.WriteLine("Willst du den Rekord zurücksetzen? ja/nein");
+
+                                            eingabe = Console.ReadLine();
+
+                                            if (eingabe == "ja")
+                                            {
+
+                                                record = 0;
+
+                                                Console.WriteLine("Der Rekord wurde auf " + record + " gesetzt.");
+
+                                            }
+
+                                            else if (eingabe == "nein")
+                                            {
+
+
+
+                                            }
+
+                                            else
+                                            {
+
+                                                schleife = false;
+
+                                                Console.WriteLine(eingabe + "ist eine falsche Eingabe.\n" +
+                                                                 "Versuche es mit 'ja' oder 'nein' nocheinmal.");
+
+                                            }
+
+                                        } while (schleife);
+
+                                        schleife = true;
 
                                     }
 
