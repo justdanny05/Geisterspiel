@@ -272,7 +272,7 @@ namespace Geisterspiel
 
                                             }
 
-                                        } while (schleife);
+                                        } while (!schleife);
 
                                         schleife = true;
 
