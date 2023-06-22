@@ -23,45 +23,23 @@ Intro:
 
 
 ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/76fa0f1c-f2dc-4473-9787-2712eafcab6b)
-                          
-
-
-
-
-
-
-
 Auswahl:
 
 
 ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/205df6db-7028-4ee7-9188-7563efe25822)
-
-
-
-
-
 Glück gehabt...
 
 
 ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/9b08b266-169a-4988-8133-700edbb05623)
-
-
-
-
 Game Over:
 
 
 ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/c0faf205-45cd-4b26-b926-2aeaa214530c)
-
 Übersicht:
 
 
-
 ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/88332758-e475-4c73-b2fe-deed9f7e38fd)
-
 Rekord zurücksetzen? ja/nein:
-_ja                                                                                                              _nein
-
 
 
 ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/b054335a-94ba-4f3b-8df6-e43be4634f91)  ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/669f0964-0f5d-41c1-be02-90bd17ee3f84)
