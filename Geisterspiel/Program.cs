@@ -41,7 +41,7 @@ namespace Geisterspiel
                 Console.Clear();
 
                 string text = "Du wachst auf und siehst, dass du dich in einem dunkelen Raum, mit jewals drei Türen befindest.\n" +
-                    "Du hast nichts bei dir, doch als du in deiner Hosentasche kramst findest du einen roten Zettel...\n";
+                              "Du hast nichts bei dir, doch als du in deiner Hosentasche kramst findest du einen roten Zettel...\n";
 
                 int verzögerung = 65;                               // Verzögerung in Millisekunden zwischen den Zeichen
 
@@ -56,7 +56,7 @@ namespace Geisterspiel
 
                         Console.ReadKey(true);               // true, um die Eingabe nicht anzuzeigen
                         Console.WriteLine("Du wachst auf und siehst, dass du dich in einem dunkelen Raum, mit jewals drei Türen befindest.\n" +
-                            "Du hast nicht bei dir, doch als du in deiner Hosentasche kramst findest du einen Zettel...");
+                                          "Du hast nicht bei dir, doch als du in deiner Hosentasche kramst findest du einen Zettel...");
                         break;
                     }
 
@@ -106,7 +106,7 @@ namespace Geisterspiel
                     Console.ForegroundColor = ConsoleColor.Magenta;
 
                     Console.WriteLine("Wähle deinen nächsten Schritt Weise\n" +
-                        "es könnte dein letzter sein...\n");
+                                      "es könnte dein letzter sein...\n");
 
                     Console.WriteLine("\tTüre 1" +
                                       "\t\tTüre 2" +
@@ -129,7 +129,9 @@ namespace Geisterspiel
                             score += 1;
 
                             Console.WriteLine("-----------------------\n");
+
                             Console.WriteLine("Hehe Glück gehabt\n");
+
                             Console.WriteLine("-----------------------\n");
 
                         }
@@ -147,7 +149,7 @@ namespace Geisterspiel
                             Console.ResetColor();
 
                             text = "Oh nein\n" +
-                                "der Geist hat dich entdeckt...\n";
+                                   "der Geist hat dich entdeckt...\n";
 
                             int alterscore = score;
                             score = 0;
@@ -166,7 +168,7 @@ namespace Geisterspiel
                                     Console.ReadKey(true);
 
                                     Console.WriteLine("Oh nein\n" +
-                                        "der Geist hat dich entdeckt...\n");
+                                                      "der Geist hat dich entdeckt...\n");
 
                                     break;
                                 }
