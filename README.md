@@ -12,3 +12,6 @@ In der Ünersicht wird ihm seine geschafte Punktzahl und der aktuelle Rekord ang
 den Rekord wieder auf 0 zu setzen oder fortzufahren.
 
 Im Groben ist das der Ablauf meines ersten Mini-Spiels.
+
+
+![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/36b22863-21af-4565-aa58-a688e2eb3b8c)
