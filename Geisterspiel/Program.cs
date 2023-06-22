@@ -110,9 +110,10 @@ namespace Geisterspiel
 
                     Console.WriteLine("\tTüre 1" +
                                       "\t\tTüre 2" +
-                                      "\t\tTüre 3");
+                                      "\t\tTüre 3\n");
 
                     eingabe = Console.ReadLine();
+                    Console.WriteLine("");
 
                     if (eingabe == "1" | eingabe == "2" | eingabe == "3")
                     {
@@ -127,7 +128,9 @@ namespace Geisterspiel
 
                             score += 1;
 
+                            Console.WriteLine("-----------------------\n");
                             Console.WriteLine("Hehe Glück gehabt\n");
+                            Console.WriteLine("-----------------------\n");
 
                         }
 
@@ -190,6 +193,7 @@ namespace Geisterspiel
                                               "\t2. Übersicht\n\n");
 
                                 eingabe = Console.ReadLine();
+                                Console.WriteLine("");
 
                                 if (eingabe == "1" | eingabe == "2")
                                 {
@@ -222,7 +226,7 @@ namespace Geisterspiel
                                             record = alterscore;
                                             SaveRecordToFile(record);
 
-                                            Console.WriteLine("Gratuliere! Du hast einen neuen Rekord aufgestellt: " + record);
+                                            Console.WriteLine("Gratuliere! Du hast einen neuen Rekord aufgestellt: " + record+"\n\n");
 
                                         }
 
@@ -230,9 +234,9 @@ namespace Geisterspiel
                                         {
 
                                             Console.WriteLine("Deine erreichten Punkte: " + alterscore + "\n" +
-                                                              "Dein Rekord liegt bei:   " + record + "\n\n\n");
+                                                              "Dein Rekord liegt bei:   " + record + "\n\n");
 
-                                            Console.WriteLine("-------------------------------------------------------------------");
+                                            Console.WriteLine("-------------------------------------------------------------------\n\n");
 
 
                                         }
@@ -242,16 +246,17 @@ namespace Geisterspiel
 
                                             schleife = true;
 
-                                            Console.WriteLine("Willst du den Rekord zurücksetzen? ja/nein");
+                                            Console.WriteLine("Willst du den Rekord zurücksetzen? ja/nein\n");
 
                                             eingabe = Console.ReadLine();
+                                            Console.WriteLine("");
 
                                             if (eingabe == "ja")
                                             {
 
                                                 record = 0;
 
-                                                Console.WriteLine("Der Rekord wurde auf " + record + " gesetzt.");
+                                                Console.WriteLine("Der Rekord wurde auf " + record + " gesetzt.\n");
 
                                             }
 
@@ -268,9 +273,11 @@ namespace Geisterspiel
                                                 schleife = false;
 
                                                 Console.WriteLine(eingabe + "ist eine falsche Eingabe.\n" +
-                                                                 "Versuche es mit 'ja' oder 'nein' nocheinmal.");
+                                                                 "Versuche es mit 'ja' oder 'nein' nocheinmal.\n");
 
                                             }
+
+                                            Console.Clear();
 
                                         } while (!schleife);
 
@@ -286,7 +293,7 @@ namespace Geisterspiel
                                     schleife = false;
 
                                     Console.WriteLine("" + eingabe + " ist eine falsche Eingabe\n" +
-                                                      "Versuche es mit '1' oder'2'");
+                                                      "Versuche es mit '1' oder'2'\n");
 
                                 }
 
@@ -314,7 +321,7 @@ namespace Geisterspiel
                         Console.ResetColor();
 
                         Console.WriteLine("" + eingabe + " ist eine falsche Eingabe\n" +
-                                          "Versuche es mit einer Zahl zwischen 1 und 3 oder gib 'beenden' ein um das Spiel zu schließen.");
+                                          "Versuche es mit einer Zahl zwischen 1 und 3 oder gib 'beenden' ein um das Spiel zu schließen.\n");
 
                         
 
