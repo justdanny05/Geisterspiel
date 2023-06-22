@@ -19,7 +19,10 @@ Im Groben ist das der Ablauf meines ersten Mini-Spiels.
 
 Bilder=>
 
-Intro:                                      ![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/76fa0f1c-f2dc-4473-9787-2712eafcab6b)
+Intro:                                      
+
+
+![grafik](https://github.com/CallmeBabygirl/Geisterspiel/assets/112081235/76fa0f1c-f2dc-4473-9787-2712eafcab6b)
                           
 
 
