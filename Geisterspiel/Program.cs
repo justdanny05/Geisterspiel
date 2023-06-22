@@ -122,7 +122,7 @@ namespace Geisterspiel
 
                         int.TryParse(eingabe, out int i_eingabe);
 
-                        if (i_eingabe == randomnr)
+                        if (i_eingabe != randomnr)
                         {
 
                             score += 1;
@@ -131,7 +131,7 @@ namespace Geisterspiel
 
                         }
 
-                        else if (i_eingabe != randomnr)
+                        else if (i_eingabe == randomnr)
                         {
 
                             Console.ForegroundColor = ConsoleColor.DarkGray;
