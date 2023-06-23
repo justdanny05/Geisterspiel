@@ -17,7 +17,7 @@ den Rekord wieder auf 0 zu setzen oder fortzufahren.
 Im Groben ist das der Ablauf meines ersten Mini-Spiels.
 
 
-Bilder=>
+#Bilder
 
 Intro:                                      
 
