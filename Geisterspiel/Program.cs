@@ -55,6 +55,9 @@ namespace Geisterspiel
                         // Eine Taste wurde gedrückt, die Ausgabe wird übersprungen
 
                         Console.ReadKey(true);               // true, um die Eingabe nicht anzuzeigen
+
+                        Console.Clear();
+
                         Console.WriteLine("Du wachst auf und siehst, dass du dich in einem dunkelen Raum, mit jewals drei Türen befindest.\n" +
                                           "Du hast nicht bei dir, doch als du in deiner Hosentasche kramst findest du einen Zettel...");
                         break;
@@ -154,7 +157,7 @@ namespace Geisterspiel
                             int alterscore = score;
                             score = 0;
 
-                            verzögerung = 50;
+                            verzögerung = 30;
 
                             foreach (char c in text)
                             {
@@ -167,6 +170,8 @@ namespace Geisterspiel
 
                                     Console.ReadKey(true);
 
+                                    Console.Clear();
+
                                     Console.WriteLine("Oh nein\n" +
                                                       "der Geist hat dich entdeckt...\n");
 
@@ -174,6 +179,7 @@ namespace Geisterspiel
                                 }
 
                                 Thread.Sleep(verzögerung);
+                                                               
                             }
 
                             Console.ForegroundColor = ConsoleColor.DarkRed;
